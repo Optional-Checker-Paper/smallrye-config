@@ -13,12 +13,12 @@ public class ChangeEvent implements Serializable {
     private final Type type;
     private final String key;
 
-    @SuppressWarnings("optional.field") // optional-field : use of optional as a field
+    @SuppressWarnings("optional:optional.field") // optional-field : use of optional as a field
     private final Optional<String> oldValue;
     private final String newValue;
     private final String fromSource;
 
-    @SuppressWarnings("optional.parameter") // optional-parameter : use of optional as a parameter
+    @SuppressWarnings("optional:optional.parameter") // optional-parameter : use of optional as a parameter
     public ChangeEvent(Type type, String key, Optional<String> oldValue, String newValue, String fromSource) {
         this.type = type;
         this.key = key;
