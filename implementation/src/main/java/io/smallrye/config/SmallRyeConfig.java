@@ -350,6 +350,7 @@ public class SmallRyeConfig implements Config, Serializable {
      * @return the resolved property value as an instance of the requested Map (not {@code null})
      * @throws IllegalArgumentException if a key or a value cannot be converted to the specified types
      */
+    @SuppressWarnings("OptionalContainsCollection") // intellij-suppression-optional-contains-collection
     public <K, V> Optional<Map<K, V>> getOptionalValues(String name, Class<K> kClass, Class<V> vClass) {
         return Optional.ofNullable(getValuesAsMap(name, requireConverter(kClass), requireConverter(vClass)));
     }
@@ -358,15 +359,18 @@ public class SmallRyeConfig implements Config, Serializable {
         return getValue(name, Converters.newOptionalConverter(converter));
     }
 
+    @SuppressWarnings("OptionalContainsCollection") // intellij-suppression-optional-contains-collection
     public <T> Optional<List<T>> getOptionalValues(final String propertyName, final Class<T> propertyType) {
         return getOptionalValues(propertyName, propertyType, ArrayList::new);
     }
 
+    @SuppressWarnings("OptionalContainsCollection") // intellij-suppression-optional-contains-collection
     public <T, C extends Collection<T>> Optional<C> getOptionalValues(String name, Class<T> itemClass,
             IntFunction<C> collectionFactory) {
         return getOptionalValues(name, requireConverter(itemClass), collectionFactory);
     }
 
+    @SuppressWarnings("OptionalContainsCollection") // intellij-suppression-optional-contains-collection
     public <T, C extends Collection<T>> Optional<C> getOptionalValues(String name, Converter<T> converter,
             IntFunction<C> collectionFactory) {
         final Optional<C> optionalValue = getOptionalValue(name,
@@ -378,6 +382,7 @@ public class SmallRyeConfig implements Config, Serializable {
         }
     }
 
+    @SuppressWarnings("OptionalContainsCollection") // intellij-suppression-optional-contains-collection
     public <T, C extends Collection<T>> Optional<C> getIndexedOptionalValues(String name, Converter<T> converter,
             IntFunction<C> collectionFactory) {
         List<String> indexedProperties = getIndexedProperties(name);

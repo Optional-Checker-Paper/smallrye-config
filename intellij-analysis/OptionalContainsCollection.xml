@@ -1,0 +1,80 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java</file>
+  <line>353</line>
+  <module>smallrye-config-core</module>
+  <package>io.smallrye.config</package>
+  <entry_point TYPE="method" FQNAME="io.smallrye.config.SmallRyeConfig java.util.Optional&lt;java.util.Map&lt;K,V&gt;&gt; getOptionalValues(java.lang.String name, java.lang.Class&lt;K&gt; kClass, java.lang.Class&lt;V&gt; vClass)" />
+  <problem_class id="OptionalContainsCollection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">'Optional' contains array or collection</problem_class>
+  <description>'Optional' contains collection &lt;code&gt;Map&lt;K, V&gt;&lt;/code&gt;</description>
+  <highlighted_element>Map&lt;K, V&gt;</highlighted_element>
+  <language>JAVA</language>
+  <offset>27</offset>
+  <length>9</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java</file>
+  <line>361</line>
+  <module>smallrye-config-core</module>
+  <package>io.smallrye.config</package>
+  <entry_point TYPE="method" FQNAME="io.smallrye.config.SmallRyeConfig java.util.Optional&lt;java.util.List&lt;T&gt;&gt; getOptionalValues(java.lang.String propertyName, java.lang.Class&lt;T&gt; propertyType)" />
+  <problem_class id="OptionalContainsCollection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">'Optional' contains array or collection</problem_class>
+  <description>'Optional' contains collection &lt;code&gt;List&lt;T&gt;&lt;/code&gt;</description>
+  <highlighted_element>List&lt;T&gt;</highlighted_element>
+  <language>JAVA</language>
+  <offset>24</offset>
+  <length>7</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java</file>
+  <line>365</line>
+  <module>smallrye-config-core</module>
+  <package>io.smallrye.config</package>
+  <entry_point TYPE="method" FQNAME="io.smallrye.config.SmallRyeConfig java.util.Optional&lt;C&gt; getOptionalValues(java.lang.String name, java.lang.Class&lt;T&gt; itemClass, java.util.function.IntFunction&lt;C&gt; collectionFactory)" />
+  <problem_class id="OptionalContainsCollection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">'Optional' contains array or collection</problem_class>
+  <description>'Optional' contains collection &lt;code&gt;C&lt;/code&gt;</description>
+  <highlighted_element>C</highlighted_element>
+  <language>JAVA</language>
+  <offset>49</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java</file>
+  <line>370</line>
+  <module>smallrye-config-core</module>
+  <package>io.smallrye.config</package>
+  <entry_point TYPE="method" FQNAME="io.smallrye.config.SmallRyeConfig java.util.Optional&lt;C&gt; getOptionalValues(java.lang.String name, org.eclipse.microprofile.config.spi.Converter&lt;T&gt; converter, java.util.function.IntFunction&lt;C&gt; collectionFactory)" />
+  <problem_class id="OptionalContainsCollection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">'Optional' contains array or collection</problem_class>
+  <description>'Optional' contains collection &lt;code&gt;C&lt;/code&gt;</description>
+  <highlighted_element>C</highlighted_element>
+  <language>JAVA</language>
+  <offset>49</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java</file>
+  <line>372</line>
+  <module>smallrye-config-core</module>
+  <package>io.smallrye.config</package>
+  <entry_point TYPE="method" FQNAME="io.smallrye.config.SmallRyeConfig java.util.Optional&lt;C&gt; getOptionalValues(java.lang.String name, org.eclipse.microprofile.config.spi.Converter&lt;T&gt; converter, java.util.function.IntFunction&lt;C&gt; collectionFactory)" />
+  <problem_class id="OptionalContainsCollection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">'Optional' contains array or collection</problem_class>
+  <description>'Optional' contains collection &lt;code&gt;C&lt;/code&gt;</description>
+  <highlighted_element>C</highlighted_element>
+  <language>JAVA</language>
+  <offset>23</offset>
+  <length>1</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java</file>
+  <line>381</line>
+  <module>smallrye-config-core</module>
+  <package>io.smallrye.config</package>
+  <entry_point TYPE="method" FQNAME="io.smallrye.config.SmallRyeConfig java.util.Optional&lt;C&gt; getIndexedOptionalValues(java.lang.String name, org.eclipse.microprofile.config.spi.Converter&lt;T&gt; converter, java.util.function.IntFunction&lt;C&gt; collectionFactory)" />
+  <problem_class id="OptionalContainsCollection" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">'Optional' contains array or collection</problem_class>
+  <description>'Optional' contains collection &lt;code&gt;C&lt;/code&gt;</description>
+  <highlighted_element>C</highlighted_element>
+  <language>JAVA</language>
+  <offset>49</offset>
+  <length>1</length>
+</problem>
+</problems>

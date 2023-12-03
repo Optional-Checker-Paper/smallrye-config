@@ -157,6 +157,8 @@ public class KeyStoreConfigSourceFactory implements ConfigSourceFactory {
                         Key key = keyStore.getKey(alias, password);
                         String encoded;
                         Optional<String> handler = aliasConfig.handler();
+                        // intellij-suppression-optional-is-present
+                        //noinspection OptionalIsPresent
                         if (handler.isPresent()) {
                             encoded = "${" + handler.get() + "::" + new String(key.getEncoded(), UTF_8) + "}";
                         } else {

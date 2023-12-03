@@ -1,0 +1,28 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/utils/events/src/main/java/io/smallrye/config/events/ChangeEvent.java</file>
+  <line>15</line>
+  <module>smallrye-config-events</module>
+  <package>io.smallrye.config.events</package>
+  <entry_point TYPE="field" FQNAME="io.smallrye.config.events.ChangeEvent oldValue" />
+  <problem_class id="OptionalUsedAsFieldOrParameterType" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">'Optional' used as field or parameter type</problem_class>
+  <description>&lt;code&gt;Optional&lt;String&gt;&lt;/code&gt; used as type for field 'oldValue'</description>
+  <highlighted_element>Optional&lt;String&gt;</highlighted_element>
+  <language>JAVA</language>
+  <offset>18</offset>
+  <length>16</length>
+</problem>
+<problem>
+  <file>file://$PROJECT_DIR$/utils/events/src/main/java/io/smallrye/config/events/ChangeEvent.java</file>
+  <line>19</line>
+  <module>smallrye-config-events</module>
+  <package>io.smallrye.config.events</package>
+  <entry_point TYPE="method" FQNAME="io.smallrye.config.events.ChangeEvent ChangeEvent(io.smallrye.config.events.Type type, java.lang.String key, java.util.Optional&lt;java.lang.String&gt; oldValue, java.lang.String newValue, java.lang.String fromSource)" />
+  <problem_class id="OptionalUsedAsFieldOrParameterType" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">'Optional' used as field or parameter type</problem_class>
+  <description>&lt;code&gt;Optional&lt;String&gt;&lt;/code&gt; used as type for parameter 'oldValue'</description>
+  <highlighted_element>Optional&lt;String&gt;</highlighted_element>
+  <language>JAVA</language>
+  <offset>46</offset>
+  <length>16</length>
+</problem>
+</problems>

@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java</file>
+  <line>160</line>
+  <module>smallrye-config-source-keystore</module>
+  <package>io.smallrye.config.source.keystore</package>
+  <entry_point TYPE="method" FQNAME="io.smallrye.config.source.keystore.KeyStoreConfigSourceFactory.UrlKeyStoreConfigSource org.eclipse.microprofile.config.spi.ConfigSource loadKeyStore(io.smallrye.config.source.keystore.KeyStoreConfig.KeyStore keyStoreConfig, char[] password)" />
+  <problem_class id="OptionalIsPresent" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Non functional style 'Optional.isPresent()' usage</problem_class>
+  <description>Can be replaced with single expression in functional style</description>
+  <highlighted_element>handler.isPresent()</highlighted_element>
+  <language>JAVA</language>
+  <offset>28</offset>
+  <length>19</length>
+</problem>
+</problems>

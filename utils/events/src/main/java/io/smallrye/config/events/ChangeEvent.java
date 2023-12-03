@@ -12,10 +12,12 @@ public class ChangeEvent implements Serializable {
 
     private final Type type;
     private final String key;
+    @SuppressWarnings("OptionalUsedAsFieldOrParameterType") // intellij-suppression-optional-used-as-field
     private final Optional<String> oldValue;
     private final String newValue;
     private final String fromSource;
 
+    @SuppressWarnings("OptionalUsedAsFieldOrParameterType") // intellij-suppression-optional-used-as-parameter
     public ChangeEvent(Type type, String key, Optional<String> oldValue, String newValue, String fromSource) {
         this.type = type;
         this.key = key;
