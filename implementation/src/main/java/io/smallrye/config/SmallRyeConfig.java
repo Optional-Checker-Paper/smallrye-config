@@ -350,7 +350,7 @@ public class SmallRyeConfig implements Config, Serializable {
      * @return the resolved property value as an instance of the requested Map (not {@code null})
      * @throws IllegalArgumentException if a key or a value cannot be converted to the specified types
      */
-    @SuppressWarnings("optional:optional.collection") // optional-collection
+    @SuppressWarnings("optional:optional.collection") // style-optional-collection
     public <K, V> Optional<Map<K, V>> getOptionalValues(String name, Class<K> kClass, Class<V> vClass) {
         return Optional.ofNullable(getValuesAsMap(name, requireConverter(kClass), requireConverter(vClass)));
     }
@@ -359,7 +359,7 @@ public class SmallRyeConfig implements Config, Serializable {
         return getValue(name, Converters.newOptionalConverter(converter));
     }
 
-    @SuppressWarnings("optional:optional.collection") // optional-collection
+    @SuppressWarnings("optional:optional.collection") // style-optional-collection
     public <T> Optional<List<T>> getOptionalValues(final String propertyName, final Class<T> propertyType) {
         return getOptionalValues(propertyName, propertyType, ArrayList::new);
     }
