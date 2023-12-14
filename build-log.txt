@@ -1,0 +1,811 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] SmallRye Config: Parent                                            [pom]
+[INFO] SmallRye Config: Common                                            [jar]
+[INFO] SmallRye Config: Core                                              [jar]
+[INFO] SmallRye Config: CDI                                               [jar]
+[INFO] SmallRye Config: Validator                                         [jar]
+[INFO] SmallRye Config: ConfigSource - HOCON                              [jar]
+[INFO] SmallRye Config: ConfigSource - FileSystem                         [jar]
+[INFO] SmallRye Config: ConfigSource - YAML                               [jar]
+[INFO] SmallRye Config: ConfigSource - ZooKeeper                          [jar]
+[INFO] SmallRye: MicroProfile Config Source - KeyStore                    [jar]
+[INFO] SmallRye Config: Converter - Json                                  [jar]
+[INFO] SmallRye Config: CDI Events                                        [jar]
+[INFO] SmallRye Config: CDI ConfigSource Injection                        [jar]
+[INFO] SmallRye Config: Crypto                                            [jar]
+[INFO] SmallRye Config: Jasypt                                            [jar]
+[INFO] SmallRye Config: Test Suite                                        [pom]
+[INFO] SmallRye Config: Test Suite - Extra                                [jar]
+[INFO] SmallRye Config: MicroProfile Config TCK                           [jar]
+[INFO] SmallRye Config: Documentation                                     [pom]
+[INFO] SmallRye Config Examples: Interceptors                             [jar]
+[INFO] SmallRye Config Examples: Property Expansion                       [jar]
+[INFO] SmallRye Config Examples: Profiles                                 [jar]
+[INFO] SmallRye Config Examples: ConfigMap                                [jar]
+[INFO] SmallRye Config Examples: Config Mapping                           [jar]
+[INFO] SmallRye Config Examples                                           [pom]
+[INFO] Empty Release Project to Avoid Maven Bug                           [pom]
+[INFO] 
+[INFO] -------------< io.smallrye.config:smallrye-config-parent >--------------
+[INFO] Building SmallRye Config: Parent 3.3.4-SNAPSHOT                   [1/26]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+Downloading from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.4 kB                    Downloaded from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/maven-metadata.xml (1.4 kB at 2.3 kB/s)
+[INFO] Artifact org.checkerframework:checker-qual:pom:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.checkerframework:checker-qual:pom:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+Downloading from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/checker-qual-3.41.1-20231214.154806-13.pom
+Downloaded from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/checker-qual-3.41.1-20231214.154806-13.pom (0 B at 0 B/s)
+[INFO] Artifact org.checkerframework:checker-qual:jar:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.checkerframework:checker-qual:jar:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+Downloading from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/checker-qual-3.41.1-20231214.154806-13.jar
+Downloaded from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/checker-qual-3.41.1-20231214.154806-13.jar (0 B at 0 B/s)
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-parent ---
+[INFO] Executing: /bin/sh -c cd '/tmp/experiments/optional-paper-counts-repos/smallrye-config' && 'git' 'rev-parse' '--verify' 'HEAD'
+[INFO] Working directory: /tmp/experiments/optional-paper-counts-repos/smallrye-config
+[INFO] Storing buildNumber: c9524c69eb659704c0cecd882feb88c7578947bb at timestamp: 1702584065368
+[INFO] Executing: /bin/sh -c cd '/tmp/experiments/optional-paper-counts-repos/smallrye-config' && 'git' 'symbolic-ref' 'HEAD'
+[INFO] Working directory: /tmp/experiments/optional-paper-counts-repos/smallrye-config
+[INFO] Storing scmBranch: optional-checker-paper/counts
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-parent ---
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-parent ---
+[INFO] Processed 0 files in 00:00.000 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-parent ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] -------------< io.smallrye.config:smallrye-config-common >--------------
+[INFO] Building SmallRye Config: Common 3.3.4-SNAPSHOT                   [2/26]
+[INFO]   from common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-common ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-common ---
+[INFO] Processed 9 files in 603ms (Formatted: 0, Unchanged: 9, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-common ---
+[INFO] Processed 9 files in 00:00.154 (Already Sorted: 9, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-common ---
+[INFO] skip non existing resourceDirectory /tmp/experiments/optional-paper-counts-repos/smallrye-config/common/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-common ---
+Downloading from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.4 kB                    Downloaded from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/maven-metadata.xml (1.4 kB at 12 kB/s)
+[INFO] Artifact org.checkerframework:checker:pom:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.checkerframework:checker:pom:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+Downloading from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/checker-3.41.1-20231214.154806-13.pom
+Downloaded from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/checker-3.41.1-20231214.154806-13.pom (0 B at 0 B/s)
+Downloading from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.4 kB                    Downloaded from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/maven-metadata.xml (1.4 kB at 15 kB/s)
+[INFO] Artifact org.checkerframework:checker-util:pom:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.checkerframework:checker-util:pom:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+Downloading from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/checker-util-3.41.1-20231214.154806-13.pom
+Downloaded from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/checker-util-3.41.1-20231214.154806-13.pom (0 B at 0 B/s)
+[INFO] Artifact org.checkerframework:checker:jar:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.checkerframework:checker-util:jar:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.checkerframework:checker:jar:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[INFO] Artifact org.checkerframework:checker-util:jar:3.41.1-20231214.154806-13 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [snapshots-repo (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+Downloading from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/checker-3.41.1-20231214.154806-13.jar
+Downloaded from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/checker-3.41.1-20231214.154806-13.jar (0 B at 0 B/s)
+Downloading from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/checker-util-3.41.1-20231214.154806-13.jar
+Downloaded from snapshots-repo: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/checker-util-3.41.1-20231214.154806-13.jar (0 B at 0 B/s)
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 7 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] --------------< io.smallrye.config:smallrye-config-core >---------------
+[INFO] Building SmallRye Config: Core 3.3.4-SNAPSHOT                     [3/26]
+[INFO]   from implementation/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-core ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-core ---
+[INFO] Processed 125 files in 591ms (Formatted: 0, Unchanged: 125, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-core ---
+[INFO] Processed 125 files in 00:00.338 (Already Sorted: 125, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-core ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-core ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 75 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[335,40] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[335,40] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[806,91] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[817,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[817,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[820,46] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[820,46] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[820,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[817,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[822,41] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[822,41] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[822,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[817,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[825,42] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[825,42] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/Converters.java:[825,31] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigValidationException.java:[68,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigValidationException.java:[68,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigValidationException.java:[69,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigValidationException.java:[69,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigValidationException.java:[69,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[63,46] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[237,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[237,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[237,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[270,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[270,75] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[271,39] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[271,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[272,39] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[272,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[338,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[338,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[339,23] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[353,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[353,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[354,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[354,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[354,23] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[357,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[357,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[358,23] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[361,33] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[361,33] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[362,32] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[365,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[365,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[367,32] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[370,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[372,26] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[372,58] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[374,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[374,25] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[370,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[375,19] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[370,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[377,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[381,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[381,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[385,33] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[385,33] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[385,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[390,30] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[390,62] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[391,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[391,25] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[381,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[395,30] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[395,30] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[395,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[381,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[398,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[398,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[398,23] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[450,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[450,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[454,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[454,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[454,31] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[450,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[457,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[457,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[457,23] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[465,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[465,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[466,49] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[476,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[476,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[477,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[477,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/SmallRyeConfig.java:[477,23] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappingInterface.java:[796,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.class [FIELD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappingInterface.java:[849,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.class [FIELD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[35,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[35,20] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[98,26] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElseGet(java.util.function.Supplier<? extends T>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[99,31] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[99,24] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[98,100] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[98,96] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[98,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[98,41] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[98,16] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElseGet(java.util.function.Supplier<? extends T>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[97,20] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[97,16] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[96,49] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappings.java:[96,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappingProvider.java:[997,103] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappingProvider.java:[997,96] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/implementation/src/main/java/io/smallrye/config/ConfigMappingGenerator.java:[88,69] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.class [FIELD]
+[INFO] 
+[INFO] -----------------< io.smallrye.config:smallrye-config >-----------------
+[INFO] Building SmallRye Config: CDI 3.3.4-SNAPSHOT                      [4/26]
+[INFO]   from cdi/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config ---
+[INFO] Processed 19 files in 53ms (Formatted: 0, Unchanged: 19, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config ---
+[INFO] Processed 19 files in 00:00.029 (Already Sorted: 19, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 10 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigProducer.java:[114,30] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigProducer.java:[114,30] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigProducer.java:[115,42] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigExtension.java:[197,40] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.class [FIELD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigInjectionBean.java:[102,28] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigInjectionBean.java:[102,44] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigInjectionBean.java:[102,44] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigInjectionBean.java:[102,86] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigInjectionBean.java:[103,46] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElseGet(java.util.function.Supplier<? extends T>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigInjectionBean.java:[103,36] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElseGet(java.util.function.Supplier<? extends T>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigProducerUtil.java:[170,42] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.class [FIELD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigProducerUtil.java:[181,55] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigProducerUtil.java:[181,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/cdi/src/main/java/io/smallrye/config/inject/ConfigProducerUtil.java:[209,42] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.class [FIELD]
+[INFO] 
+[INFO] ------------< io.smallrye.config:smallrye-config-validator >------------
+[INFO] Building SmallRye Config: Validator 3.3.4-SNAPSHOT                [5/26]
+[INFO]   from validator/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-validator ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-validator ---
+[INFO] Processed 5 files in 20ms (Formatted: 0, Unchanged: 5, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-validator ---
+[INFO] Processed 5 files in 00:00.008 (Already Sorted: 5, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-validator ---
+[INFO] skip non existing resourceDirectory /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-validator ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[92,32] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[92,48] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[92,48] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[93,45] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isEmpty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[93,37] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isEmpty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[96,45] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[96,41] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[120,36] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[120,57] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[120,57] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[121,54] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isEmpty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[121,46] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isEmpty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[124,55] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/validator/src/main/java/io/smallrye/config/validator/BeanValidationConfigValidator.java:[124,51] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[INFO] 
+[INFO] ----------< io.smallrye.config:smallrye-config-source-hocon >-----------
+[INFO] Building SmallRye Config: ConfigSource - HOCON 3.3.4-SNAPSHOT     [6/26]
+[INFO]   from sources/hocon/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-source-hocon ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-source-hocon ---
+[INFO] Processed 4 files in 11ms (Formatted: 0, Unchanged: 4, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-source-hocon ---
+[INFO] Processed 4 files in 00:00.003 (Already Sorted: 4, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-source-hocon ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-source-hocon ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 3 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] -------< io.smallrye.config:smallrye-config-source-file-system >--------
+[INFO] Building SmallRye Config: ConfigSource - FileSystem 3.3.4-SNAPSHOT [7/26]
+[INFO]   from sources/file-system/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-source-file-system ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-source-file-system ---
+[INFO] Processed 5 files in 56ms (Formatted: 0, Unchanged: 5, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-source-file-system ---
+[INFO] Processed 5 files in 00:00.003 (Already Sorted: 5, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-source-file-system ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-source-file-system ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 3 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] -----------< io.smallrye.config:smallrye-config-source-yaml >-----------
+[INFO] Building SmallRye Config: ConfigSource - YAML 3.3.4-SNAPSHOT      [8/26]
+[INFO]   from sources/yaml/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-source-yaml ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-source-yaml ---
+[INFO] Processed 8 files in 23ms (Formatted: 0, Unchanged: 8, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-source-yaml ---
+[INFO] Processed 8 files in 00:00.015 (Already Sorted: 8, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-source-yaml ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-source-yaml ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 3 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] --------< io.smallrye.config:smallrye-config-source-zookeeper >---------
+[INFO] Building SmallRye Config: ConfigSource - ZooKeeper 3.3.4-SNAPSHOT [9/26]
+[INFO]   from sources/zookeeper/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-source-zookeeper ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-source-zookeeper ---
+[INFO] Processed 6 files in 10ms (Formatted: 0, Unchanged: 6, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-source-zookeeper ---
+[INFO] Processed 6 files in 00:00.004 (Already Sorted: 6, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-source-zookeeper ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-source-zookeeper ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 5 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] ---------< io.smallrye.config:smallrye-config-source-keystore >---------
+[INFO] Building SmallRye: MicroProfile Config Source - KeyStore 3.3.4-SNAPSHOT [10/26]
+[INFO]   from sources/keystore/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-source-keystore ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-source-keystore ---
+[INFO] Processed 3 files in 7ms (Formatted: 0, Unchanged: 3, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-source-keystore ---
+[INFO] Processed 3 files in 00:00.005 (Already Sorted: 3, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-source-keystore ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-source-keystore ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfig.java:[21,25] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfig.java:[26,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfig.java:[28,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[44,58] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isEmpty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[44,50] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isEmpty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[146,48] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[146,48] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[147,46] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[147,46] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[147,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[151,48] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[151,48] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[152,57] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[159,41] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[159,70] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[160,45] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[160,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[161,56] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[161,52] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[165,64] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/sources/keystore/src/main/java/io/smallrye/config/source/keystore/KeyStoreConfigSourceFactory.java:[165,57] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[INFO] 
+[INFO] ---------< io.smallrye.config:smallrye-config-converter-json >----------
+[INFO] Building SmallRye Config: Converter - Json 3.3.4-SNAPSHOT        [11/26]
+[INFO]   from converters/json/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-converter-json ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-converter-json ---
+[INFO] Processed 4 files in 8ms (Formatted: 0, Unchanged: 4, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-converter-json ---
+[INFO] Processed 4 files in 00:00.002 (Already Sorted: 4, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-converter-json ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-converter-json ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 2 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] -------------< io.smallrye.config:smallrye-config-events >--------------
+[INFO] Building SmallRye Config: CDI Events 3.3.4-SNAPSHOT              [12/26]
+[INFO]   from utils/events/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-events ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-events ---
+[INFO] Processed 11 files in 11ms (Formatted: 0, Unchanged: 11, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-events ---
+[INFO] Processed 11 files in 00:00.006 (Already Sorted: 11, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-events ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-events ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 10 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEvent.java:[15,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEvent.java:[19,63] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEvent.java:[22,12] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEvent.java:[22,24] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEvent.java:[35,28] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEvent.java:[35,28] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEvent.java:[36,15] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[25,30] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[25,65] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[27,40] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[27,30] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[28,60] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[28,56] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[54,56] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[54,49] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[60,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[60,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[66,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[66,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[66,31] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[60,34] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[69,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[69,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/regex/RegexFilterInterceptor.java:[69,23] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[57,89] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[62,85] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[68,87] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[68,87] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[68,81] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[90,28] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[90,28] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[92,33] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[92,33] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[92,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[90,28] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[93,26] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[93,26] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/smallrye-config/utils/events/src/main/java/io/smallrye/config/events/ChangeEventNotifier.java:[93,23] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[INFO] 
+[INFO] --------< io.smallrye.config:smallrye-config-source-injection >---------
+[INFO] Building SmallRye Config: CDI ConfigSource Injection 3.3.4-SNAPSHOT [13/26]
+[INFO]   from utils/cdi-provider/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-source-injection ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-source-injection ---
+[INFO] Processed 6 files in 8ms (Formatted: 0, Unchanged: 6, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-source-injection ---
+[INFO] Processed 6 files in 00:00.002 (Already Sorted: 6, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-source-injection ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-source-injection ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 3 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] -------------< io.smallrye.config:smallrye-config-crypto >--------------
+[INFO] Building SmallRye Config: Crypto 3.3.4-SNAPSHOT                  [14/26]
+[INFO]   from utils/crypto/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-crypto ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-crypto ---
+[INFO] Processed 3 files in 7ms (Formatted: 0, Unchanged: 3, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-crypto ---
+[INFO] Processed 3 files in 00:00.002 (Already Sorted: 3, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-crypto ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-crypto ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] -------------< io.smallrye.config:smallrye-config-jasypt >--------------
+[INFO] Building SmallRye Config: Jasypt 3.3.4-SNAPSHOT                  [15/26]
+[INFO]   from utils/jasypt/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-jasypt ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-jasypt ---
+[INFO] Processed 3 files in 5ms (Formatted: 0, Unchanged: 3, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-jasypt ---
+[INFO] Processed 3 files in 00:00.002 (Already Sorted: 3, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-jasypt ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-jasypt ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [forked debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] ------------< io.smallrye.config:smallrye-config-testsuite >------------
+[INFO] Building SmallRye Config: Test Suite 3.3.4-SNAPSHOT              [16/26]
+[INFO]   from testsuite/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-testsuite ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-testsuite ---
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-testsuite ---
+[INFO] Processed 0 files in 00:00.000 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-testsuite ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] -----------< io.smallrye.config:smallrye-config-test-extra >------------
+[INFO] Building SmallRye Config: Test Suite - Extra 3.3.4-SNAPSHOT      [17/26]
+[INFO]   from testsuite/extra/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-test-extra ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-test-extra ---
+[INFO] Processed 31 files in 24ms (Formatted: 0, Unchanged: 31, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-test-extra ---
+[INFO] Processed 31 files in 00:00.024 (Already Sorted: 31, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-test-extra ---
+[INFO] skip non existing resourceDirectory /tmp/experiments/optional-paper-counts-repos/smallrye-config/testsuite/extra/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-test-extra ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] ---------------< io.smallrye.config:smallrye-config-tck >---------------
+[INFO] Building SmallRye Config: MicroProfile Config TCK 3.3.4-SNAPSHOT [18/26]
+[INFO]   from testsuite/tck/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-tck ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-tck ---
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-tck ---
+[INFO] Processed 0 files in 00:00.000 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ smallrye-config-tck ---
+[INFO] skip non existing resourceDirectory /tmp/experiments/optional-paper-counts-repos/smallrye-config/testsuite/tck/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-tck ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] ----------< io.smallrye.config:smallrye-config-documentation >----------
+[INFO] Building SmallRye Config: Documentation 3.3.4-SNAPSHOT           [19/26]
+[INFO]   from documentation/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-documentation ---
+[INFO] 
+[INFO] --- resources:3.3.1:copy-resources (update-attributes) @ smallrye-config-documentation ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-documentation ---
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-documentation ---
+[INFO] Processed 0 files in 00:00.000 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-documentation ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --------------< io.smallrye.config.examples:interceptors >--------------
+[INFO] Building SmallRye Config Examples: Interceptors 3.3.4-SNAPSHOT   [20/26]
+[INFO]   from examples/interceptors/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ interceptors ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ interceptors ---
+[INFO] Processed 2 files in 5ms (Formatted: 0, Unchanged: 2, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ interceptors ---
+[INFO] Processed 2 files in 00:00.000 (Already Sorted: 2, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ interceptors ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ interceptors ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] ---------------< io.smallrye.config.examples:expansion >----------------
+[INFO] Building SmallRye Config Examples: Property Expansion 3.3.4-SNAPSHOT [21/26]
+[INFO]   from examples/expansion/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ expansion ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ expansion ---
+[INFO] Processed 4 files in 5ms (Formatted: 0, Unchanged: 4, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ expansion ---
+[INFO] Processed 4 files in 00:00.001 (Already Sorted: 4, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ expansion ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ expansion ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] ----------------< io.smallrye.config.examples:profiles >----------------
+[INFO] Building SmallRye Config Examples: Profiles 3.3.4-SNAPSHOT       [22/26]
+[INFO]   from examples/profiles/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ profiles ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ profiles ---
+[INFO] Processed 4 files in 5ms (Formatted: 0, Unchanged: 4, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ profiles ---
+[INFO] Processed 4 files in 00:00.001 (Already Sorted: 4, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ profiles ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ profiles ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] ---------------< io.smallrye.config.examples:configmap >----------------
+[INFO] Building SmallRye Config Examples: ConfigMap 3.3.4-SNAPSHOT      [23/26]
+[INFO]   from examples/configmap/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ configmap ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ configmap ---
+[INFO] Processed 1 files in 4ms (Formatted: 0, Unchanged: 1, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ configmap ---
+[INFO] Processed 1 files in 00:00.001 (Already Sorted: 1, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ configmap ---
+[INFO] skip non existing resourceDirectory /tmp/experiments/optional-paper-counts-repos/smallrye-config/examples/configmap/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ configmap ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug target 11] to target/classes
+[INFO] 
+[INFO] ----------------< io.smallrye.config.examples:mapping >-----------------
+[INFO] Building SmallRye Config Examples: Config Mapping 3.3.4-SNAPSHOT [24/26]
+[INFO]   from examples/mapping/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ mapping ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ mapping ---
+[INFO] Processed 7 files in 6ms (Formatted: 0, Unchanged: 7, Failed: 0, Readonly: 0)
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ mapping ---
+[INFO] Processed 7 files in 00:00.002 (Already Sorted: 7, Needed Sorting: 0)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mapping ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mapping ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 5 source files with javac [debug target 11] to target/classes
+[WARNING] The following options were not recognized by any processor: '[org.jboss.logging.tools.addGeneratedAnnotation]'
+[INFO] 
+[INFO] ------------< io.smallrye.config:smallrye-config-examples >-------------
+[INFO] Building SmallRye Config Examples 3.3.4-SNAPSHOT                 [25/26]
+[INFO]   from examples/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-examples ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-examples ---
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-examples ---
+[INFO] Processed 0 files in 00:00.000 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-examples ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] -------------< io.smallrye.config:smallrye-config-release >-------------
+[INFO] Building Empty Release Project to Avoid Maven Bug 3.3.4-SNAPSHOT [26/26]
+[INFO]   from release/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- buildnumber:3.2.0:create (get-scm-revision) @ smallrye-config-release ---
+[INFO] 
+[INFO] --- formatter:2.22.0:format (default) @ smallrye-config-release ---
+[INFO] 
+[INFO] --- impsort:1.8.0:sort (sort-imports) @ smallrye-config-release ---
+[INFO] Processed 0 files in 00:00.000 (Already Sorted: 0, Needed Sorting: 0)
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ smallrye-config-release ---
+[INFO] No sources to compile
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for SmallRye Config: Parent 3.3.4-SNAPSHOT:
+[INFO] 
+[INFO] SmallRye Config: Parent ............................ SUCCESS [  1.455 s]
+[INFO] SmallRye Config: Common ............................ SUCCESS [  3.169 s]
+[INFO] SmallRye Config: Core .............................. SUCCESS [  7.498 s]
+[INFO] SmallRye Config: CDI ............................... SUCCESS [  2.597 s]
+[INFO] SmallRye Config: Validator ......................... SUCCESS [  1.586 s]
+[INFO] SmallRye Config: ConfigSource - HOCON .............. SUCCESS [  1.400 s]
+[INFO] SmallRye Config: ConfigSource - FileSystem ......... SUCCESS [  1.538 s]
+[INFO] SmallRye Config: ConfigSource - YAML ............... SUCCESS [  1.793 s]
+[INFO] SmallRye Config: ConfigSource - ZooKeeper .......... SUCCESS [  1.508 s]
+[INFO] SmallRye: MicroProfile Config Source - KeyStore .... SUCCESS [  1.586 s]
+[INFO] SmallRye Config: Converter - Json .................. SUCCESS [  1.123 s]
+[INFO] SmallRye Config: CDI Events ........................ SUCCESS [  1.504 s]
+[INFO] SmallRye Config: CDI ConfigSource Injection ........ SUCCESS [  1.281 s]
+[INFO] SmallRye Config: Crypto ............................ SUCCESS [  1.237 s]
+[INFO] SmallRye Config: Jasypt ............................ SUCCESS [  1.062 s]
+[INFO] SmallRye Config: Test Suite ........................ SUCCESS [  0.006 s]
+[INFO] SmallRye Config: Test Suite - Extra ................ SUCCESS [  0.113 s]
+[INFO] SmallRye Config: MicroProfile Config TCK ........... SUCCESS [  0.030 s]
+[INFO] SmallRye Config: Documentation ..................... SUCCESS [  0.014 s]
+[INFO] SmallRye Config Examples: Interceptors ............. SUCCESS [  0.243 s]
+[INFO] SmallRye Config Examples: Property Expansion ....... SUCCESS [  0.062 s]
+[INFO] SmallRye Config Examples: Profiles ................. SUCCESS [  0.047 s]
+[INFO] SmallRye Config Examples: ConfigMap ................ SUCCESS [  0.057 s]
+[INFO] SmallRye Config Examples: Config Mapping ........... SUCCESS [  0.077 s]
+[INFO] SmallRye Config Examples ........................... SUCCESS [  0.004 s]
+[INFO] Empty Release Project to Avoid Maven Bug ........... SUCCESS [  0.003 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  31.166 s
+[INFO] Finished at: 2023-12-14T12:01:35-08:00
+[INFO] ------------------------------------------------------------------------
